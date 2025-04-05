@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o header */
+header h1 {
+    font-family: "Sour Gummy", sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: #000000 2px 1px 1px;
+}
+
+/* Estilizando o h2 */
+h2 {
+    font-family: "Sour Gummy", sans-serif;
+    color: #0fbfcc;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: #6200ff 2px 1px 1px;
+}
+
+/* Centralizando conteúdo */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 30px;
+}
+
+/* Ajustando imagem */
+li img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Adicionando a moldura */
+.frame {
+    border: 5px solid #0093f5;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin-top: 50px;
+}
+
+/* Corações nos cantos */
+.frame::before, .frame::after {
+    content: "💛";
+    font-size: 25px;
+    position: absolute;
+    animation: pulse 1s infinite alternate;
+}
+
+.frame::before {
+    top: -20px;
+    left: -20px;
+}
+
+.frame::after {
+    bottom: -20px;
+    right: -20px;
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+body {
+    background-image: url('./estrela.jpg'); /* Substitua pelo caminho correto */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa quando você rolar a página */
+    height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    margin: 0;
+}
+
+
